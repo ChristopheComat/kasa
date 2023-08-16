@@ -1,0 +1,27 @@
+.page-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: #ff6060;
+        margin: 100px 0 46px 0;
+    }
+}
+.page-error img {
+    margin-bottom: 100px;
+}
+
+.page-error h2 {
+    color: #ff6060;
+}
+
+.page-error Link {
+    color: #ff6060;
+    margin-top: 50px;
+}
+/* NotFound.scss */
+
+.page-error {
+    /* ... styles for the error page */
+}
