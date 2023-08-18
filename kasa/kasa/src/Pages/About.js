@@ -9,10 +9,10 @@ function About() {
             <Header />
             <BannerAbout />
             <div className="collapses-container">
-                <Collapse title="fiabilité" content="/" />
-                <Collapse title="respect" content="/" />
-                <Collapse title="service" content="/" />
-                <Collapse title="sécurité" content="/" />
+                <Collapse title="titre" content="description" />
+                <Collapse title="titre" content="description" />
+                <Collapse title="titre" content="description" />
+                <Collapse title="titre" content="description" />
             </div>
         </div>
     );
