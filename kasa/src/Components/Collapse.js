@@ -18,7 +18,13 @@ function Collapse({ title, content }) {
                     <FontAwesomeIcon icon={faChevronUp} />
                 </span>
             </div>
-            {isOpen && <div className="collapse-content">{content}</div>}
+            {isOpen && (
+                <div className="collapse-content">
+                    <ul>
+                        <li>{content}</li>
+                    </ul>
+                </div>
+            )}
         </div>
     );
 }

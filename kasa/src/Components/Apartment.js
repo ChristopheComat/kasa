@@ -7,7 +7,7 @@ function Apartment() {
         <div className="container">
             {data.map((apartment) => (
                 <div className="card" key={apartment.id}>
-                    <img src={apartment.pictures} alt={apartment.title} />
+                    <img src={apartment.cover} alt={apartment.title} />
                     <h2>{apartment.title}</h2>
                 </div>
             ))}

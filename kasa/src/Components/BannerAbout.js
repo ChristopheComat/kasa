@@ -4,7 +4,7 @@ import "./BannerAbout.scss";
 function BannerAbout() {
     return (
         <div className="banner-about">
-            <img src="/images/banner-about.png" alt="paysage" />
+            <img src="/images/bannerabout.png" alt="paysage" />
         </div>
     );
 }
