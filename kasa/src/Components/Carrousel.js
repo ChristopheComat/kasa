@@ -21,19 +21,17 @@ function Carrousel() {
 
     return (
         <div className="carrousel">
-            <div>
-                <button className="arrow-button left" onClick={goToPrevSlide}>
-                    <img src="/images/arrow-left.png" alt="flèche de gauche" />
-                </button>
-                <img
-                    src={images[currentIndex]}
-                    alt={`Slide ${currentIndex + 1}`}
-                    className="slide"
-                />
-                <button className="arrow-button right" onClick={goToNextSlide}>
-                    <img src="/images/arrow-right.png" alt="flèche de droite" />
-                </button>
-            </div>
+            <button className="arrow-button left" onClick={goToPrevSlide}>
+                <img src="/images/arrow-left.png" alt="flèche de gauche" />
+            </button>
+            <img
+                src={images[currentIndex]}
+                alt={`Slide ${currentIndex + 1}`}
+                className="slide"
+            />
+            <button className="arrow-button right" onClick={goToNextSlide}>
+                <img src="/images/arrow-right.png" alt="flèche de droite" />
+            </button>
         </div>
     );
 }
