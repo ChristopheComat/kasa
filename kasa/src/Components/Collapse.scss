@@ -25,9 +25,9 @@
 }
 
 .collapse-content {
-    background-color: #fde2e2;
+    background-color: #f6f6f6;
     padding: 10px;
-    color: black;
+    color: #ff6060;
 }
 .collapses-container {
     display: flex;
@@ -36,8 +36,9 @@
 }
 
 .collapses-containerInfo {
-    margin-left: 4vw;
+    margin: 40px 4vw 50px 4vw;
     display: flex;
     flex-direction: row;
     width: 91vw;
+    gap: 3vw;
 }

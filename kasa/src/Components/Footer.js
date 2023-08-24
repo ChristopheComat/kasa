@@ -4,7 +4,12 @@ import "./Footer.scss";
 function Footer() {
     return (
         <footer>
-            <img src="/images/Footer.png" alt="footer" />
+            <div className="footer-background">
+                <img src="/images/logo-footer.png" alt="footer" />
+                <p>
+                    <span>C</span>2020 Kasa. All rights reserved
+                </p>
+            </div>
         </footer>
     );
 }

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import data from "../Data/data.json";
 import "./Carrousel.scss";
 
-const images = ["image1.png", "image2.png", "image3.png"];
+const images = data[0].pictures;
 
 function Carrousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,17 +21,19 @@ function Carrousel() {
 
     return (
         <div className="carrousel">
-            <button className="arrow-button left" onClick={goToPrevSlide}>
-                <img src="/images/arrow-left.png" alt="Left Arrow" />
-            </button>
-            <img
-                src={images[currentIndex]}
-                alt={`Slide ${currentIndex + 1}`}
-                className="slide"
-            />
-            <button className="arrow-button right" onClick={goToNextSlide}>
-                <img src="/images/arrow-right.png" alt="Right Arrow" />
-            </button>
+            <div>
+                <button className="arrow-button left" onClick={goToPrevSlide}>
+                    <img src="/images/arrow-left.png" alt="flèche de gauche" />
+                </button>
+                <img
+                    src={images[currentIndex]}
+                    alt={`Slide ${currentIndex + 1}`}
+                    className="slide"
+                />
+                <button className="arrow-button right" onClick={goToNextSlide}>
+                    <img src="/images/arrow-right.png" alt="flèche de droite" />
+                </button>
+            </div>
         </div>
     );
 }
