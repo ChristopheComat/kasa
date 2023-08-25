@@ -7,11 +7,13 @@ function Apartment() {
     return (
         <div className="container">
             {data.map((apartment) => (
-                <Link to={`/fiche-logement/${apartment.id}`} key={apartment.id}>
-                    <div className="card">
-                        <img src={apartment.cover} alt={apartment.title} />
-                        <h2>{apartment.title}</h2>
-                    </div>
+                <Link
+                    to={`/fiche-logement/${apartment.id}`}
+                    key={apartment.id}
+                    className="card"
+                >
+                    <img src={apartment.cover} alt={apartment.title} />
+                    <h2>{apartment.title}</h2>
                 </Link>
             ))}
         </div>

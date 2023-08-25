@@ -1,40 +1,31 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faSolidStar } from "@fortawesome/free-solid-svg-icons";
-import data from "../Data/data.json";
 import "./InfosFiche.scss";
 
-function InfosFiche() {
-    const apartment = data[0];
-
+function InfosFiche({ apartment }) {
     const { title, location, tags, host, rating } = apartment;
 
-    const renderStars = () => {
+    const ratedStars = () => {
         const fullStars = Math.floor(rating);
-        const halfStar = rating - fullStars === 0.5;
+        const remainingStars = 5 - fullStars;
 
         const stars = [];
 
-        for (let i = 1; i <= 5; i++) {
-            if (i <= fullStars) {
-                stars.push(
-                    <FontAwesomeIcon
-                        key={i}
-                        icon={faSolidStar}
-                        className="red"
-                    />
-                );
-            } else if (i === fullStars + 1 && halfStar) {
-                stars.push(
-                    <FontAwesomeIcon
-                        key={i}
-                        icon={faSolidStar}
-                        className="grey"
-                    />
-                );
-            } else {
-                stars.push(<FontAwesomeIcon key={i} icon={faSolidStar} />);
-            }
+        for (let i = 1; i <= fullStars; i++) {
+            stars.push(
+                <FontAwesomeIcon key={i} icon={faSolidStar} className="red" />
+            );
+        }
+
+        for (let i = 1; i <= remainingStars; i++) {
+            stars.push(
+                <FontAwesomeIcon
+                    key={fullStars + i}
+                    icon={faSolidStar}
+                    className="grey"
+                />
+            );
         }
 
         return stars;
@@ -60,7 +51,7 @@ function InfosFiche() {
                     <p>{host.name}</p>
                     <img src={host.picture} alt={host.name} />
                 </div>
-                <div className="rating">{renderStars()}</div>
+                <div className="rating">{ratedStars()}</div>
             </div>
         </div>
     );

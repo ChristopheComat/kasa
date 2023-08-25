@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 0 1vw 0 1vw;
+    padding: 0 1vw;
 }
 
 .arrow {
@@ -29,6 +29,7 @@
     padding: 10px;
     color: #ff6060;
 }
+
 .collapses-container {
     display: flex;
     flex-direction: column;
@@ -41,4 +42,12 @@
     flex-direction: row;
     width: 91vw;
     gap: 3vw;
+}
+
+.collapse-content ul {
+    list-style-type: none;
+}
+
+.collapse-content li {
+    padding: 5px;
 }

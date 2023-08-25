@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import data from "../Data/data.json";
 import "./Carrousel.scss";
 
-const images = data[0].pictures;
-
-function Carrousel() {
+function Carrousel({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToNextSlide = () => {
