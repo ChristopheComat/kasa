@@ -18,17 +18,23 @@ function Carrousel({ images }) {
 
     return (
         <div className="carrousel">
-            <button className="arrow-button left" onClick={goToPrevSlide}>
-                <img src="/images/arrow-left.png" alt="flèche de gauche" />
-            </button>
+            <img
+                src="/images/arrow-left.png"
+                alt="flèche de gauche"
+                className="arrow-button left"
+                onClick={goToPrevSlide}
+            />
             <img
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
                 className="slide"
             />
-            <button className="arrow-button right" onClick={goToNextSlide}>
-                <img src="/images/arrow-right.png" alt="flèche de droite" />
-            </button>
+            <img
+                src="/images/arrow-right.png"
+                alt="flèche de droite"
+                className="arrow-button right"
+                onClick={goToNextSlide}
+            />
         </div>
     );
 }

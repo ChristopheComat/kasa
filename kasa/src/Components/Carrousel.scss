@@ -10,8 +10,6 @@
 .arrow-button {
     position: absolute;
     top: 50%;
-    width: 40px;
-    height: 40px;
     color: black;
     display: flex;
     justify-content: center;
@@ -19,8 +17,13 @@
     cursor: pointer;
 }
 
+.arrow-button.left {
+    left: 1.5vw;
+}
+
 .arrow-button.right {
     right: 0;
+    top: calc(45% + 20px);
 }
 
 .slide {
