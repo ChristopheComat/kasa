@@ -3,15 +3,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.nav-link {
-    margin-left: 4vw;
-    text-decoration: none;
-    color: #ff6060;
-}
+    @media (min-width: 501px) {
+        .logo-mobile {
+            display: none;
+        }
+    }
 
-.nav-about {
-    text-decoration: none;
-    color: #ff6060;
+    .nav-link {
+        margin-left: 4vw;
+        text-decoration: none;
+        color: #ff6060;
+    }
+
+    .nav-about {
+        text-decoration: none;
+        color: #ff6060;
+    }
+
+    @media (max-width: 500px) {
+        .logo-desktop {
+            display: none;
+        }
+    }
 }

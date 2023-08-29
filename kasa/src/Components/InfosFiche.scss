@@ -2,6 +2,12 @@
     display: flex;
     justify-content: space-between;
     margin: 0 4vw;
+    @media (max-width: 800px) {
+        .infos-container {
+            flex-direction: column; /* Met les éléments en colonne */
+            align-items: center; /* Centre les éléments horizontalement */
+        }
+    }
 }
 
 .part-two {

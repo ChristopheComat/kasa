@@ -3,25 +3,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    a {
-        color: #ff6060;
-        margin: 100px 0 46px 0;
-    }
 }
+
+.page-error a {
+    color: #ff6060;
+    margin: 100px 0 46px 0;
+}
+
 .page-error img {
-    margin-bottom: 100px;
+    margin: 80px 0 80px 0;
 }
 
 .page-error h2 {
     color: #ff6060;
+    @media (max-width: 800px) {
+        width: 80%;
+    }
 }
 
-.page-error Link {
+.page-error a {
     color: #ff6060;
     margin-top: 50px;
 }
-/* NotFound.scss */
 
-.page-error {
-    /* ... styles for the error page */
+@media (max-width: 800px) {
+    .error-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 801px) {
+    .error-mobile {
+        display: none;
+    }
 }

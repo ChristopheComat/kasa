@@ -3,7 +3,12 @@
     padding: 80px;
     margin: 0 4vw;
     text-align: center;
-    color: blue;
+    color: white;
     background-image: url(http://localhost:3000/images/banner1.png);
     background-size: cover;
+    @media (max-width: 500px) {
+        padding: 40px;
+        text-align: initial;
+        font-size: 10px;
+    }
 }

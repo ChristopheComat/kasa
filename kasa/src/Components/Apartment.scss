@@ -5,10 +5,13 @@
     flex-wrap: wrap;
     margin: 50px 4vw;
     padding: 50px 4vw;
-    border: 1px solid #f6f6f6;
     background: #f6f6f6;
     border-radius: 25px;
     height: auto;
+    @media (max-width: 1000px) {
+        background: none;
+        margin: 0;
+    }
 }
 
 .card {
@@ -17,6 +20,10 @@
     height: 340px;
     position: relative;
     margin: 2vh;
+    @media (max-width: 1000px) {
+        width: 335px;
+        height: 225px;
+    }
 }
 
 .card h2 {

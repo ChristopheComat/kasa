@@ -5,7 +5,16 @@ import "./Header.scss";
 function Header() {
     return (
         <header>
-            <img src="/images/Logo.png" alt="Logo Kasa" />
+            <img
+                src="/images/Logo.png"
+                alt="Logo Kasa"
+                className="logo-desktop"
+            />
+            <img
+                src="/images/Logo-mobile.png"
+                alt="Logo Kasa"
+                className="logo-mobile"
+            />
             <nav className="nav-links">
                 <Link to="/" className="nav-about">
                     Accueil
