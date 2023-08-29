@@ -12,7 +12,10 @@ function Collapse({ title, content }) {
 
     return (
         <div className={`collapse ${isOpen ? "open" : ""}`}>
-            <div className="collapse-header" onClick={toggleCollapse}>
+            <div
+                className={`collapse-header ${isOpen ? "radius" : ""}`}
+                onClick={toggleCollapse}
+            >
                 <h3>{title}</h3>
                 <span className={`arrow ${isOpen ? "open" : ""}`}>
                     <FontAwesomeIcon icon={faChevronUp} />

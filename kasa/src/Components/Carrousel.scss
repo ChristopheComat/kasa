@@ -5,6 +5,9 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    @media (max-width: 800px) {
+        height: 250px;
+    }
 }
 
 .arrow-button {
@@ -15,6 +18,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    @media (max-width: 800px) {
+        width: 25px;
+    }
 }
 
 .arrow-button.left {
@@ -22,8 +28,8 @@
 }
 
 .arrow-button.right {
-    right: 0;
-    top: calc(45% + 20px);
+    right: 1vw;
+    top: calc(45% + 7px);
 }
 
 .slide {

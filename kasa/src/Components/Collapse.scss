@@ -1,11 +1,15 @@
 .collapse {
     border-radius: 10px;
     margin-bottom: 35px;
-    overflow: hidden;
+    //overflow: hidden;
     color: #fff;
     width: 60vw;
     @media (max-width: 800px) {
         width: 90vw;
+    }
+
+    & .radius {
+        border-radius: 10px 10px 0 0;
     }
 }
 
@@ -16,6 +20,7 @@
     align-items: center;
     cursor: pointer;
     padding: 0 1vw;
+    border-radius: 10px;
 }
 
 .arrow {
@@ -44,6 +49,10 @@
     flex-direction: row;
     width: 91vw;
     gap: 3vw;
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .collapse-content ul {
