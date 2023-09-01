@@ -51,7 +51,7 @@
     gap: 3vw;
     @media (max-width: 800px) {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
