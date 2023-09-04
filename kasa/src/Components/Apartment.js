@@ -8,8 +8,8 @@ function Apartment() {
         <div className="container">
             {data.map((apartment) => (
                 <Link
-                    to={`/fiche-logement/${apartment.id}`}
-                    key={apartment.id}
+                    to={`/fiche-logement/${apartment.id}`} // création d'un lien vers la fiche détaillée de l'appartement
+                    key={apartment.id} // utilisation de l'ID comme clé unique pour chaque appartement
                     className="card"
                 >
                     <img src={apartment.cover} alt={apartment.title} />

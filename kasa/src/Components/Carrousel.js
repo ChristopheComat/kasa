@@ -16,25 +16,37 @@ function Carrousel({ images }) {
         );
     };
 
+    // la condition pour vérifier s'il y a plus d'une image
+    const showControls = images.length > 1;
+
     return (
         <div className="carrousel">
-            <img
-                src="/images/arrow-left.png"
-                alt="flèche de gauche"
-                className="arrow-button left"
-                onClick={goToPrevSlide}
-            />
+            {showControls && (
+                <img
+                    src="/images/arrow-left.png"
+                    alt="flèche de gauche"
+                    className="arrow-button left"
+                    onClick={goToPrevSlide}
+                />
+            )}
             <img
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
                 className="slide"
             />
-            <img
-                src="/images/arrow-right.png"
-                alt="flèche de droite"
-                className="arrow-button right"
-                onClick={goToNextSlide}
-            />
+            {showControls && (
+                <img
+                    src="/images/arrow-right.png"
+                    alt="flèche de droite"
+                    className="arrow-button right"
+                    onClick={goToNextSlide}
+                />
+            )}
+            {showControls && (
+                <div className="slide-number">
+                    {currentIndex + 1} / {images.length}
+                </div>
+            )}
         </div>
     );
 }

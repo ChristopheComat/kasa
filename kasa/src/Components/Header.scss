@@ -16,6 +16,10 @@ header {
         color: #ff6060;
     }
 
+    .nav-link.active {
+        text-decoration: underline;
+    }
+
     .nav-about {
         text-decoration: none;
         color: #ff6060;

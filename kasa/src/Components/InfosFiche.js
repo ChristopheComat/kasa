@@ -4,8 +4,10 @@ import { faStar as faSolidStar } from "@fortawesome/free-solid-svg-icons";
 import "./InfosFiche.scss";
 
 function InfosFiche({ apartment }) {
+    // destructuration des données de l'appartement
     const { title, location, tags, host, rating } = apartment;
 
+    // fonction pour générer la note d'étoiles
     const ratedStars = () => {
         const fullStars = Math.floor(rating);
         const remainingStars = 5 - fullStars;
@@ -51,7 +53,7 @@ function InfosFiche({ apartment }) {
                     <p>{host.name}</p>
                     <img src={host.picture} alt={host.name} />
                 </div>
-                <div className="rating">{ratedStars()}</div>
+                <div className="rating">{ratedStars()}</div>{" "}
             </div>
         </div>
     );
